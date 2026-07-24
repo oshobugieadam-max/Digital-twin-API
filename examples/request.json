@@ -1,1 +1,18 @@
-
+{
+  "flare_gas_flow": 1200,
+  "suction_pressure": 1.0,
+  "discharge_pressure": 6.0,
+  "compressor_efficiency": 65,
+  "fuel_gas_demand": 900,
+  "uptime": 92,
+  "steam_flow_proxy": 8000,
+  "ncg_fraction": 2.5,
+  "h2s_in_ppm": 500,
+  "abatement_efficiency": 95,
+  "permit_limit_ppm": 50,
+  "ambient_temp": 25,
+  "upset_event": false,
+  "compressor_trip": false,
+  "hot_day": false,
+  "abatement_drop": false
+}
