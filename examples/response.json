@@ -1,1 +1,70 @@
-
+{
+  "metadata": {
+    "model": "digital-twin-v1.0",
+    "version": "1.0.0",
+    "simulation_type": "oil_gas_geothermal_combined",
+    "timestamp": "2025-07-23T10:00:00+00:00"
+  },
+  "summary": {
+    "overall_status": "Operational",
+    "key_message": "Plant operating well — recovery 75.0 %, H₂S outlet 25.0 ppm (Compliant)."
+  },
+  "oil_gas": {
+    "gas_recovered": 828.0,
+    "gas_flared": 276.0,
+    "compressor_power_kw": 273.9,
+    "recovery_rate": 75.0,
+    "co2_avoided": 2277.0
+  },
+  "geothermal": {
+    "ncg_flow": 200.0,
+    "h2s_out_ppm": 25.0,
+    "extraction_power_kw": 16.0,
+    "power_penalty_percent": 1.0,
+    "compliance": "Compliant",
+    "h2s_reduction": 95.0
+  },
+  "comparison": {
+    "released_gas": 276.005,
+    "total_power": 289.9,
+    "compliance_indicator": 1
+  },
+  "health_score": {
+    "score": 85.5,
+    "status": "Healthy"
+  },
+  "recommendations": [
+    {
+      "priority": "Medium",
+      "category": "Oil & Gas",
+      "message": "Recovery rate is 75.0 % — review fuel gas demand alignment to push above 80 %."
+    }
+  ],
+  "charts": [
+    {
+      "title": "Gas Balance (kg/h)",
+      "labels": ["Recovered", "Flared"],
+      "values": [828.0, 276.0]
+    },
+    {
+      "title": "CO₂ Avoided (kg/h)",
+      "labels": ["CO₂ Avoided"],
+      "values": [2277.0]
+    },
+    {
+      "title": "H₂S Concentration (ppm)",
+      "labels": ["Inlet", "Outlet", "Permit Limit"],
+      "values": [500.0, 25.0, 50.0]
+    },
+    {
+      "title": "Power Consumption (kW)",
+      "labels": ["Compressor", "NCG Extraction"],
+      "values": [273.9, 16.0]
+    },
+    {
+      "title": "Recovery Rate (%)",
+      "labels": ["Actual", "Target"],
+      "values": [75.0, 80.0]
+    }
+  ]
+}
